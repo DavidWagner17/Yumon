@@ -28,6 +28,16 @@
 
    <div id="map"></div>
   <% end %>
+  </br>
+  <h1>Photos</h1>
+
+  <% @place.photos.each do |photo| %>
+    <div>
+      <blockquote>
+        <b><%= photo.caption %></b>
+      </blockquote>
+    </div>
+  <% end %>
 
   <br />
 
@@ -40,7 +50,7 @@
 </div>
 
 <div class="clear"></div>
-
+</br>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
